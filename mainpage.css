@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+  
+    background-attachment: fixed;
+    backface-visibility: hidden;
+}
+/* ########### header ############# */
+#header {
+    background-color: aquamarine;
+    height: 200px;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+#img {
+    position: absolute;
+    margin:10px;
+}
+#heading{
+        position: absolute;
+    margin-left: 230px;
+}
+#heading1{
+    text-align: center;
+    font-weight: 50;
+    font-size: 35px;
+    text-align: center;
+   
+}
+#heading2{
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+   
+}
+ /* ################# welcome ################# */
+#welcome{
+    width: 1000px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: aquamarine;
+    position: relative;
+}
+ .p2 a,.p3 a{
+    text-decoration: none;
+}
+.p1,.p2,.p3{
+    position: absolute;
+    margin-top: 15px;
+}
+.p1{
+    margin-left: 10px;
+}
+.p2{
+    margin-left: 800px;
+}
+.p3{
+    margin-left: 900px;
+}
+.p3 a:hover{
+    color: darkgreen;
+    font-size: 20px;
+    transition: font-size 0.2s ease;
+}
+ 
+/* #################### box ################### */
+#box{
+    width: 1000px;
+    height: 800px;
+    margin: 0px 160px;
+    background-color: antiquewhite;
+     position: relative;   
+}
+
+#leftbox{
+    width: 200px;
+    height: auto;
+    background-color: aquamarine;  
+    position: absolute;
+}
+#leftbox ul li {
+    list-style-type: none;
+   padding: 7px;
+    border-bottom: 1px solid gray;
+    border-bottom-width: medium;
+}
+#leftbox ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+#leftbox ul li a:hover{
+    color: darkgreen;
+    font-size: 20px;
+    transition: font-size 0.2s ease;
+}
+#rightbox{
+    width: 200px;
+    height: auto;
+    background-color: aquamarine;
+    float: right;
+    
+}
+#rightbox ul li {
+    list-style-type: none;
+   padding: 7px;
+    border-bottom: 1px solid gray;
+    border-bottom-width: medium;
+}
+#rightbox ul li a{
+    text-decoration: none; 
+}
+#rightbox ul li a:hover{
+    color: darkgreen;
+    font-size: 20px;
+    transition: font-size 0.2s ease;
+}
+#box #rightbox{
+    margin-left: 800px;
+    
+    position: absolute;
+}
+#box #leftbox{
+    float: left;
+}
+#midbox{
+    height:500px;
+    width: 600px;
+    position: absolute;
+    margin-left: 200px;
+    background-color: gray;
+    overflow: hidden;
+
+}

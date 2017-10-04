@@ -1,0 +1,43 @@
+#form button{
+    background-color: darkgreen;
+    width: 100px;
+    height: 40px;
+   
+    color: white;
+    box-shadow: 3px 3px 2px gray;
+    box-sizing: border-box;
+}
+#form{
+    margin-left: 37%;
+    margin-right: auto;
+}
+#header1{
+    text-align: center;
+    font-weight: 50;
+    font-size: 50px;
+}
+#header2{
+    text-align: center;
+    font-weight: 10;
+    font-size: 50px;
+    
+}
+#email{
+    width: 350px;
+    height: 30px;
+}
+#password{
+    width: 350px;
+    height: 30px;
+}
+#fogpas{
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#cac a{
+    margin-left: 90px;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
