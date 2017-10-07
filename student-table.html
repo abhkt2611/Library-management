@@ -15,71 +15,41 @@
     </style>
     </head>
     <body>
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Mobile</th>
-            <th>Course</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-         <tr>
-            <td>2</td>
-            <td>Abhishek</td>
-            <td>kumar</td>
-            <td>8564123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Aditya</td>
-            <td>Parashar</td>
-            <td>7235123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Piyush</td>
-            <td>Sharma</td>
-            <td>9546123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Shikhar</td>
-            <td>Jain</td>
-            <td>9546123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-       </tr>
-       <tr>
-            <td>6</td>
-            <td>Ramlal</td>
-            <td>Kushwah</td>
-            <td>9546123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Taporilal</td>
-            <td>kawadi</td>
-            <td>9546123874</td>
-            <td>Btech</td>
-            <td><a href="#">Edit</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        </table>
+    
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "csjma1500";
+$dbname = "abh_library";
+
+// Create connection
+echo "ajay triveedi naam to suma ho hoga";
+$conn =  mysqli_connect("localhost","root", "csjma1500","abh_library");
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+$sql = "SELECT * FROM member";
+$result = mysqli_query($conn, $sql);
+if ($result->num_rows > 0) {
+    echo "<table><tr><th>ID</th><th>Firstname</th><th>lastname</th><th>mobile no</th><th>email</th><th>department</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]."</td> <td>".$row["lastname"]."</td><td>".$row["contact"]."</td><td>".$row["email"]."</td><td>".$row["course"]."</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+$conn->close();
+
+
+?>
+
         
     </body>
 
